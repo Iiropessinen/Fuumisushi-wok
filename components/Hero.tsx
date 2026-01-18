@@ -6,12 +6,12 @@ const Hero: React.FC = () => {
   const { t } = useLanguage();
 
   return (
-    <section id="hero" className="relative h-[95vh] flex items-center justify-center overflow-hidden pt-16">
+    <section id="hero" className="relative h-[100vh] flex items-center justify-center overflow-hidden pt-16 md:pt-24">
       <div 
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url('https://images.unsplash.com/photo-1583623025817-d180a2221d0a?auto=format&fit=crop&w=1600&q=80')` }}
+        style={{ backgroundImage: `url('https://i.imgur.com/T6iGHQ8.png')` }}
       >
-        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0 bg-black/50"></div>
       </div>
       
       <div className="relative container mx-auto px-6 text-center text-white">

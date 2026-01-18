@@ -45,24 +45,26 @@ const MobileQuickMenu: React.FC = () => {
   ];
 
   return (
-    <nav className="md:hidden fixed bottom-0 left-0 right-0 z-[100] bg-white/95 backdrop-blur-md border-t border-stone-100 shadow-[0_-8px_30px_rgba(0,0,0,0.1)] pb-safe">
-      <div className="flex justify-around items-center h-20">
-        {menuItems.map((item, index) => (
-          <a
-            key={index}
-            href={item.href}
-            className="flex flex-col items-center justify-center flex-1 h-full text-orange-fuumi active:bg-stone-50 transition-all group"
-          >
-            <div className="mb-1 group-active:scale-90 transition-transform">
-              {item.icon}
-            </div>
-            <span className="text-[10px] font-black uppercase tracking-tight text-stone-600 group-active:text-orange-fuumi">
-              {item.label}
-            </span>
-          </a>
-        ))}
-      </div>
-    </nav>
+    <div className="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 z-[100] w-[90%] max-w-sm">
+      <nav className="bg-white/80 backdrop-blur-xl border border-orange-fuumi/20 shadow-[0_15px_40px_rgba(255,87,34,0.25)] rounded-full px-2 py-2">
+        <div className="flex justify-around items-center h-16">
+          {menuItems.map((item, index) => (
+            <a
+              key={index}
+              href={item.href}
+              className="flex flex-col items-center justify-center flex-1 h-full text-stone-800 active:text-orange-fuumi transition-all group"
+            >
+              <div className="mb-1 group-active:scale-90 group-active:text-orange-fuumi transition-all">
+                {item.icon}
+              </div>
+              <span className="text-[9px] font-black uppercase tracking-tight text-stone-500 group-active:text-orange-fuumi">
+                {item.label}
+              </span>
+            </a>
+          ))}
+        </div>
+      </nav>
+    </div>
   );
 };
 

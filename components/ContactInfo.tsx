@@ -78,7 +78,7 @@ const ContactInfo: React.FC = () => {
           <div className="h-full min-h-[400px] w-full bg-stone-200 rounded-3xl overflow-hidden relative shadow-inner">
              <div 
                className="absolute inset-0 bg-cover bg-center grayscale opacity-60"
-               style={{ backgroundImage: `url('https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1200&q=80')` }}
+               style={{ backgroundImage: `url('https://i.imgur.com/HVY03v2.png')` }}
              ></div>
              <div className="absolute inset-0 bg-gradient-to-t from-stone-900/60 to-transparent"></div>
              <div className="absolute inset-0 flex items-center justify-center">

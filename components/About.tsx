@@ -23,7 +23,7 @@ const About: React.FC = () => {
                 <span className="text-sm uppercase tracking-widest text-stone-500">{t('about.fresh')}</span>
               </div>
               <div className="flex flex-col gap-2">
-                <span className="text-orange-fuumi text-3xl font-bold">Local</span>
+                <span className="text-orange-fuumi text-3xl font-bold">Seinäjoki</span>
                 <span className="text-sm uppercase tracking-widest text-stone-500">{t('about.local')}</span>
               </div>
             </div>
@@ -31,8 +31,8 @@ const About: React.FC = () => {
           <div className="flex-1 w-full">
             <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=80" 
-                alt="Restaurant Interior" 
+                src="https://i.imgur.com/xlQTxPe.png" 
+                alt="Fuumi Sushi & Wok Ulkoa" 
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 border-[12px] border-white/10 pointer-events-none rounded-3xl"></div>

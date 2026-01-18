@@ -8,7 +8,7 @@ export interface MenuItemTranslation {
 
 export interface MenuItem {
   id: string;
-  category: 'sushi' | 'wok' | 'juomat';
+  category: 'sushi' | 'wok' | 'juomat' | 'jalkiruoka';
   image: string;
   price: string;
   translations: {
