@@ -45,8 +45,8 @@ const MobileQuickMenu: React.FC = () => {
   ];
 
   return (
-    <div className="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 z-[100] w-[90%] max-w-sm">
-      <nav className="bg-white/80 backdrop-blur-xl border border-orange-fuumi/20 shadow-[0_15px_40px_rgba(255,87,34,0.25)] rounded-full px-2 py-2">
+    <div className="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 z-[100] w-[92%] max-w-sm">
+      <nav className="bg-white/90 backdrop-blur-2xl border-2 border-orange-fuumi/40 shadow-[0_20px_60px_-15px_rgba(255,87,34,0.4)] rounded-full px-2 py-2">
         <div className="flex justify-around items-center h-16">
           {menuItems.map((item, index) => (
             <a
@@ -54,10 +54,10 @@ const MobileQuickMenu: React.FC = () => {
               href={item.href}
               className="flex flex-col items-center justify-center flex-1 h-full text-stone-800 active:text-orange-fuumi transition-all group"
             >
-              <div className="mb-1 group-active:scale-90 group-active:text-orange-fuumi transition-all">
+              <div className="mb-1 group-active:scale-90 group-active:text-orange-fuumi transition-all drop-shadow-sm">
                 {item.icon}
               </div>
-              <span className="text-[9px] font-black uppercase tracking-tight text-stone-500 group-active:text-orange-fuumi">
+              <span className="text-[10px] font-black uppercase tracking-tight text-stone-600 group-active:text-orange-fuumi">
                 {item.label}
               </span>
             </a>
