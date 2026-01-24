@@ -53,10 +53,10 @@ export const MENU_ITEMS: MenuItem[] = [
 ];
 
 export const OPENING_HOURS: OpeningHour[] = [
-  { day: { fi: 'Maanantai - Torstai', en: 'Monday - Thursday' }, hours: '10:30 - 20:00' },
-  { day: { fi: 'Perjantai', en: 'Friday' }, hours: '10:30 - 21:00' },
-  { day: { fi: 'Lauantai', en: 'Saturday' }, hours: '12:00 - 21:00' },
-  { day: { fi: 'Sunnuntai', en: 'Sunday' }, hours: '12:00 - 18:00' }
+  { day: { fi: 'Maanantai - Torstai', en: 'Monday - Thursday' }, hours: '10:30 - 21:00' },
+  { day: { fi: 'Perjantai', en: 'Friday' }, hours: '10:30 - 22:00' },
+  { day: { fi: 'Lauantai', en: 'Saturday' }, hours: '11:30 - 22:00' },
+  { day: { fi: 'Sunnuntai', en: 'Sunday' }, hours: '12:00 - 20:00' }
 ];
 
 export const CONTACT_DATA = {
