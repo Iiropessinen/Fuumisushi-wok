@@ -4,18 +4,18 @@ import { MenuItem, OpeningHour, BuffetPrice } from './types';
 export const BUFFET_PRICES: BuffetPrice[] = [
   {
     label: { fi: 'Aikuiset', en: 'Adults' },
-    price: '12,90€ / 15€',
-    subtext: { fi: 'Arkisin 12,90€ • Viikonloppuisin 15,00€', en: 'Weekdays 12.90€ • Weekends 15.00€' }
+    price: '12,90€ / 15,90€',
+    subtext: { fi: 'Arkisin 12,90€ • Vkonloppu ja pyhät 15,90€', en: 'Weekdays 12.90€ • Weekends and holidays 15.90€' }
   },
   {
-    label: { fi: 'Lapset arkisin', en: 'Children Weekdays' },
+    label: { fi: 'Opiskelijat & eläkeläiset', en: 'Students & pensioners' },
+    price: '11,50€ / 14,50€',
+    subtext: { fi: 'Arkisin 11,50€ • Vkonloppu ja pyhät 14,50€', en: 'Weekdays 11.50€ • Weekends and holidays 14.50€' }
+  },
+  {
+    label: { fi: 'Lapset', en: 'Children' },
     price: '4€ – 11€',
-    subtext: { fi: '3-5v: 4€ | 6-9v: 7,5€ | 10-12v: 11€', en: '3-5y: 4€ | 6-9y: 7.5€ | 10-12y: 11€' }
-  },
-  {
-    label: { fi: 'Lapset viikonloppuisin', en: 'Children Weekends' },
-    price: '5€ – 12€',
-    subtext: { fi: '3-5v: 5€ | 6-9v: 8,5€ | 10-12v: 12€', en: '3-5y: 5€ | 6-9y: 8.5€ | 10-12y: 11€' }
+    subtext: { fi: '3-5v: 4€ | 6-9v: 7,50€ | 10-12v: 11€', en: '3-5y: 4€ | 6-9y: 7.50€ | 10-12y: 11€' }
   }
 ];
 

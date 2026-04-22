@@ -11,14 +11,30 @@ import { LanguageProvider, useLanguage } from './LanguageContext';
 import { CONTACT_DATA } from './constants';
 
 const TakeawaySection: React.FC = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   return (
     <section id="takeaway" className="py-24 bg-stone-50 text-center">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-6xl font-black mb-6 uppercase tracking-tight text-stone-900">{t('takeaway.title')}</h2>
-        <p className="text-xl md:text-2xl opacity-70 mb-12 max-w-2xl mx-auto font-medium leading-relaxed text-stone-600">
+        <p className="text-xl md:text-2xl opacity-70 mb-10 max-w-2xl mx-auto font-medium leading-relaxed text-stone-600">
           {t('takeaway.desc')}
         </p>
+
+        <div className="flex flex-col md:flex-row justify-center gap-6 mb-12 max-w-3xl mx-auto">
+          <div className="bg-white p-6 rounded-3xl shadow-sm border border-stone-100 flex-1">
+            <h3 className="text-stone-400 font-bold uppercase tracking-widest text-sm mb-2">
+              {language === 'fi' ? 'Sushi take away' : 'Sushi take away'}
+            </h3>
+            <div className="text-3xl font-black text-stone-900">19,90€ <span className="text-lg text-stone-400 font-bold">/ kg</span></div>
+          </div>
+          <div className="bg-white p-6 rounded-3xl shadow-sm border border-stone-100 flex-1">
+            <h3 className="text-stone-400 font-bold uppercase tracking-widest text-sm mb-2">
+              {language === 'fi' ? 'Wok take away' : 'Wok take away'}
+            </h3>
+            <div className="text-3xl font-black text-stone-900">16,90€ <span className="text-lg text-stone-400 font-bold">/ kg</span></div>
+          </div>
+        </div>
+
         <a 
           href="tel:0413255578" 
           className="inline-flex items-center gap-4 bg-orange-fuumi text-white px-14 py-6 rounded-3xl font-black text-2xl shadow-2xl hover:scale-105 active:scale-95 transition-all w-full sm:w-auto justify-center"
